@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils'
 import { UserRole } from '@/constants/enums'
 
 const OrganizationListPage = () => {
-  const { token, user, orgId } = useAuth()
+  const { token, user } = useAuth()
   const [orgs, setOrgs] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
 
